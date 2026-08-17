@@ -27,8 +27,7 @@ export const restaurant = {
   phoneHref: "tel:+97143426955",
   mapsUrl: "https://maps.app.goo.gl/F3rMqfs4L2sqKCH26",
   mapEmbedQuery: "LIZ Restaurant, 17 9B St, Al Karama, Dubai",
-  orderUrl:
-    "https://talabat.com/uae/restaurant/715060/liz-restaurant-al-karama",
+  orderUrl: "https://talabat.com/uae/restaurant/715060/liz-restaurant-al-karama",
   orderPlatform: "Talabat",
   priceRange: "AED 1–50",
   services: ["Dine-in", "Takeaway", "No-contact delivery"],
@@ -41,10 +40,10 @@ export const restaurant = {
 } as const;
 
 export const navLinks = [
-  { label: "Home", hash: "#home" },
-  { label: "Menu", hash: "#menu" },
-  { label: "Our Story", hash: "#story" },
-  { label: "Reviews", hash: "#reviews" },
-  { label: "Gallery", hash: "#gallery" },
-  { label: "Location", hash: "#location" },
+  { label: "Home", to: "/", hash: "#home" },
+  { label: "Menu", to: "/menu", hash: "#menu" },
+  { label: "Our Story", to: "/story", hash: "#story" },
+  { label: "Reviews", to: "/reviews", hash: "#reviews" },
+  { label: "Gallery", to: "/gallery", hash: "#gallery" },
+  { label: "Location", to: "/location", hash: "#location" },
 ] as const;

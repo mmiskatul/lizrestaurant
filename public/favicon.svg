@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4D3E" />
+      <stop offset="100%" stop-color="#0E2E25" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D070" />
+      <stop offset="100%" stop-color="#D4A017" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="32" fill="url(#bg)" />
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="none" stroke="url(#gold)" stroke-width="3" opacity="0.6" />
+  <path d="M64 24 C50 36 44 50 44 62 C44 76 53 86 64 86 C75 86 84 76 84 62 C84 50 78 36 64 24 Z" fill="url(#gold)" />
+  <circle cx="64" cy="58" r="8" fill="#1B4D3E" />
+  <text x="64" y="108" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">LIZ</text>
+</svg>

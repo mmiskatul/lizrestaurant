@@ -1232,25 +1232,22 @@ Build the entire website as a polished production-ready application, not as a de
 
 Start by creating the project architecture, then implement the design system, then build each section, then add animation and interactions, then perform a full responsive and production-quality review.
 
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://lizrestaurant.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/de90ba81-b89c-41c0-8b0e-4c787019d574).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+This project is built with Next.js (App Router), TypeScript, Tailwind CSS, and Framer Motion.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Run the development server locally:
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Build
+
+```sh
+bun run build
+bun run start
 ```
