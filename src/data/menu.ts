@@ -26,7 +26,7 @@ export interface MenuItem {
   /** AED. Null until verified pricing is supplied. */
   price: number | null;
   diet: Diet;
-  image: string;
+  image: any;
   ingredients: string[];
   dietaryInfo: string;
   signature?: boolean;
@@ -54,8 +54,7 @@ export const menu: MenuItem[] = [
     id: "kerala-meals",
     name: "Kerala Meals",
     category: "Kerala Meals",
-    description:
-      "Rice served with sambar, avial, thoran, pickle and papadam on a banana leaf.",
+    description: "Rice served with sambar, avial, thoran, pickle and papadam on a banana leaf.",
     price: null,
     diet: "veg",
     image: keralaMeal,
@@ -67,8 +66,7 @@ export const menu: MenuItem[] = [
     id: "beef-roast",
     name: "Beef Roast",
     category: "Beef",
-    description:
-      "Slow-roasted beef with coconut slivers, black pepper and curry leaves.",
+    description: "Slow-roasted beef with coconut slivers, black pepper and curry leaves.",
     price: null,
     diet: "non-veg",
     image: beefRoast,
