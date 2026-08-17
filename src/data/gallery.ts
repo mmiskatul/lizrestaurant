@@ -26,7 +26,7 @@ export type GalleryCategory = (typeof galleryCategories)[number];
 
 export interface GalleryImage {
   id: string;
-  src: string;
+  src: any;
   alt: string;
   category: Exclude<GalleryCategory, "All">;
   /** Tailwind row/col span classes for the asymmetrical masonry grid. */
@@ -41,16 +41,53 @@ export const gallery: GalleryImage[] = [
     category: "Kerala Meals",
     span: "sm:col-span-2 sm:row-span-2",
   },
-  { id: "g2", src: interior, alt: "Warm dining room with wooden tables and rattan chairs", category: "Restaurant" },
+  {
+    id: "g2",
+    src: interior,
+    alt: "Warm dining room with wooden tables and rattan chairs",
+    category: "Restaurant",
+  },
   { id: "g3", src: fishFry, alt: "Kerala style masala fish fry on banana leaf", category: "Fish" },
-  { id: "g4", src: appam, alt: "Stack of soft appam with coconut stew", category: "Food", span: "sm:row-span-2" },
-  { id: "g5", src: beefRoast, alt: "Dark caramelised Kerala beef roast in a bowl", category: "Food" },
+  {
+    id: "g4",
+    src: appam,
+    alt: "Stack of soft appam with coconut stew",
+    category: "Food",
+    span: "sm:row-span-2",
+  },
+  {
+    id: "g5",
+    src: beefRoast,
+    alt: "Dark caramelised Kerala beef roast in a bowl",
+    category: "Food",
+  },
   { id: "g6", src: pazhamPori, alt: "Golden banana fritters with tea", category: "Snacks" },
-  { id: "g7", src: storyTable, alt: "Family style South Indian table spread", category: "Atmosphere", span: "sm:col-span-2" },
+  {
+    id: "g7",
+    src: storyTable,
+    alt: "Family style South Indian table spread",
+    category: "Atmosphere",
+    span: "sm:col-span-2",
+  },
   { id: "g8", src: dosa, alt: "Crisp dosa with chutney and sambar", category: "Food" },
-  { id: "g9", src: chai, alt: "Filter coffee poured between steel tumblers", category: "Atmosphere" },
+  {
+    id: "g9",
+    src: chai,
+    alt: "Filter coffee poured between steel tumblers",
+    category: "Atmosphere",
+  },
   { id: "g10", src: chickenCurry, alt: "Nadan chicken curry in a clay pot", category: "Food" },
-  { id: "g11", src: spices, alt: "Chillies, turmeric and whole spices on linen", category: "Atmosphere" },
+  {
+    id: "g11",
+    src: spices,
+    alt: "Chillies, turmeric and whole spices on linen",
+    category: "Atmosphere",
+  },
   { id: "g12", src: payasam, alt: "Kerala payasam dessert in a brass bowl", category: "Snacks" },
-  { id: "g13", src: kozhukatta, alt: "Steamed rice dumplings on a banana leaf", category: "Snacks" },
+  {
+    id: "g13",
+    src: kozhukatta,
+    alt: "Steamed rice dumplings on a banana leaf",
+    category: "Snacks",
+  },
 ];

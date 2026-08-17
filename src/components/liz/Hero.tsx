@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 import { ArrowRight, MapPin, Star } from "lucide-react";
 
@@ -8,6 +10,8 @@ import { LizLink } from "./LizButton";
 const ease = [0.22, 1, 0.36, 1] as const;
 
 export function Hero() {
+  const imgSrc = (heroImage as any)?.src || (heroImage as any);
+
   return (
     <section
       id="home"
@@ -41,8 +45,8 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.35, ease }}
             className="mt-7 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
-            Homely Kerala flavours, generous portions and the warmth of South India —
-            right in the heart of Al Karama.
+            Homely Kerala flavours, generous portions and the warmth of South India — right in the
+            heart of Al Karama.
           </motion.p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -51,7 +55,7 @@ export function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5, ease }}
             >
-              <LizLink href="#menu" size="lg" className="w-full sm:w-auto">
+              <LizLink href="/menu" size="lg" className="w-full sm:w-auto">
                 Explore Menu
                 <ArrowRight
                   className="size-4 transition-transform duration-300 group-hover:translate-x-1"
@@ -91,9 +95,7 @@ export function Hero() {
             ].map((item) => (
               <div key={item.label}>
                 <dt className="eyebrow text-muted-foreground">{item.label}</dt>
-                <dd className="mt-1.5 text-sm font-semibold sm:text-[0.9375rem]">
-                  {item.value}
-                </dd>
+                <dd className="mt-1.5 text-sm font-semibold sm:text-[0.9375rem]">{item.value}</dd>
               </div>
             ))}
           </motion.dl>
@@ -107,7 +109,7 @@ export function Hero() {
             className="relative overflow-hidden rounded-[2rem] shadow-[var(--shadow-lift)] sm:rounded-[2.5rem]"
           >
             <img
-              src={heroImage}
+              src={imgSrc}
               alt="Kerala sadya meal served on a banana leaf with rice, sambar and sides"
               width={1280}
               height={1600}
@@ -142,9 +144,7 @@ export function Hero() {
             className="glass-card absolute -right-2 top-1/3 rounded-2xl px-4 py-3 sm:-right-6 sm:px-5 sm:py-4"
           >
             <p className="font-display text-xl font-extrabold sm:text-2xl">2,800+</p>
-            <p className="mt-0.5 text-[0.6875rem] font-medium text-muted-foreground">
-              Reviews
-            </p>
+            <p className="mt-0.5 text-[0.6875rem] font-medium text-muted-foreground">Reviews</p>
           </motion.div>
 
           <motion.div
@@ -156,9 +156,7 @@ export function Hero() {
             <p className="font-display text-xl font-extrabold text-primary sm:text-2xl">
               {restaurant.priceRange}
             </p>
-            <p className="mt-0.5 text-[0.6875rem] font-medium text-muted-foreground">
-              Per person
-            </p>
+            <p className="mt-0.5 text-[0.6875rem] font-medium text-muted-foreground">Per person</p>
           </motion.div>
         </div>
       </div>

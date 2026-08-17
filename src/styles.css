@@ -213,7 +213,8 @@
 }
 
 @utility soft-radial {
-  background-image: radial-gradient(
+  background-image:
+    radial-gradient(
       120% 90% at 85% 0%,
       color-mix(in oklab, var(--gold) 12%, transparent) 0%,
       transparent 55%
@@ -224,4 +225,3 @@
       transparent 60%
     );
 }
-

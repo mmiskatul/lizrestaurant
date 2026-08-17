@@ -57,7 +57,5 @@ export function isOpenNow(now: Date = new Date()) {
   if (!today?.opens || !today.closes) return false;
   const open = toMinutes(today.opens);
   const close = toMinutes(today.closes);
-  return close > open
-    ? minutes >= open && minutes < close
-    : minutes >= open || minutes < close;
+  return close > open ? minutes >= open && minutes < close : minutes >= open || minutes < close;
 }

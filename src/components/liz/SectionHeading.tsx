@@ -1,3 +1,5 @@
+"use client";
+
 import type { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
@@ -21,13 +23,7 @@ export function SectionHeading({
   className,
 }: SectionHeadingProps) {
   return (
-    <div
-      className={cn(
-        "max-w-3xl",
-        align === "center" && "mx-auto text-center",
-        className,
-      )}
-    >
+    <div className={cn("max-w-3xl", align === "center" && "mx-auto text-center", className)}>
       {eyebrow ? (
         <ScrollReveal>
           <p
@@ -64,9 +60,7 @@ export function SectionHeading({
             className={cn(
               "mt-5 max-w-xl text-[0.9375rem] leading-relaxed sm:text-base",
               align === "center" && "mx-auto",
-              tone === "light"
-                ? "text-primary-foreground/70"
-                : "text-muted-foreground",
+              tone === "light" ? "text-primary-foreground/70" : "text-muted-foreground",
             )}
           >
             {copy}
